@@ -5,10 +5,10 @@ FROM node:18
 WORKDIR /usr/src/app
 
 # Copy package.json if you have one (optional)
-# COPY package*.json ./
+ COPY package*.json ./
 
 # Install dependencies (none needed here if you’re not using npm packages)
-# RUN npm install
+ RUN npm install
 
 # Copy your entire app source code
 COPY . .
