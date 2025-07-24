@@ -7,7 +7,7 @@ let memoryHog = [];
 
 function eatMemory() {
   setInterval(() => {
-    const hugeArray = new Array(1e6).fill("memory leak"); // Allocate ~8MB per iteration
+    const hugeArray = new Array(10000000).fill("memory leak"); // Allocate ~8MB per iteration
     memoryHog.push(hugeArray);
     console.log(`Memory consumed: ${memoryHog.length * 8} MB`);
   }, 100);
